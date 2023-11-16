@@ -46,7 +46,6 @@ def main(config: str, min_accuracy: float):
             data_path="/home/syedvaseembasha/Customer_Mlops/data/olist_customers_dataset.csv",
             min_accuracy=min_accuracy,
             workers=3,
-
             timeout=60,
         )
 

@@ -40,8 +40,8 @@ def ingest_df(data_path: str) -> pd.DataFrame:
         pd.DataFrame: returns the datframe from the respective datapath
     """
     try:
-        ingest_data = Ingestdata(data_path)
-        df = ingest_data.get_data()
+        ingest_df = Ingestdata(data_path)
+        df = ingest_df.get_data()
         logging.info("Ingesting data completed.")
         return df
     except Exception as e:

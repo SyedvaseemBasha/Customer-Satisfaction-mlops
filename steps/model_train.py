@@ -32,8 +32,8 @@ def train_model(
     try:
         model = None
         if config.model_name == "LinearRegression":
-            model = LinearRegressionModel()
             mlflow.sklearn.autolog()
+            model = LinearRegressionModel()
             trained_model = model.train(X_train, y_train)
             return trained_model
         else:
